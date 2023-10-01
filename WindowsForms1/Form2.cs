@@ -36,5 +36,60 @@ namespace WindowsForms1
         {
             Application.Exit();
         }
+
+        private void txtHra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGrossSalry_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+            double bs=Convert.ToDouble(txtbasicsalary.Text);
+            double hra = bs * 0.40;
+            double ta = bs * 0.30;
+            double da = bs * 0.20;
+            double pf = bs * 0.12;
+            double gross = (bs+hra+ta+da)-pf;
+
+            txtHra.Text = hra.ToString();
+            txtTa.Text = ta.ToString();
+            txtDA.Text = da.ToString();
+            txtPF.Text = pf.ToString();
+            txtGrossSalry.Text=gross.ToString();   
+
+
+        }
+
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            string msg =txtEmpId.Text +"\n"+txtEmpname.Text+"\n"+cmbDEPTlist.Text+"\n"+txtGrossSalry.Text;
+            lblmsg.Text = msg;  
+        }
+
+        private void lblmsg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

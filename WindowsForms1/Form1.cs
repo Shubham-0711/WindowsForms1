@@ -39,8 +39,11 @@ namespace WindowsForms1
             {
                 MessageBox.Show("Login Successfully");
                 Form_Employee_Details form2 = new Form_Employee_Details();
-                form2.Show();
-                this.Hide();
+                //     form2.Show();
+                //this.Hide();
+                MDIForm mDIForm = new MDIForm();
+                mDIForm.Show();
+                this.Hide();//This refers to the login form
             }
             else
             {

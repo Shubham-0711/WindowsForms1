@@ -51,7 +51,7 @@
             // 
             this.txtusername.AccessibleName = "";
             this.txtusername.Location = new System.Drawing.Point(280, 148);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(4);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(199, 22);
             this.txtusername.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             this.txtpassword.AccessibleName = "";
             this.txtpassword.Location = new System.Drawing.Point(280, 194);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(199, 22);
@@ -84,7 +84,7 @@
             this.btnlogin.AccessibleName = "";
             this.btnlogin.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnlogin.Location = new System.Drawing.Point(323, 257);
-            this.btnlogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(115, 28);
             this.btnlogin.TabIndex = 4;
@@ -97,7 +97,7 @@
             this.btncancel.AccessibleName = "";
             this.btncancel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btncancel.Location = new System.Drawing.Point(323, 308);
-            this.btncancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncancel.Margin = new System.Windows.Forms.Padding(4);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(115, 28);
             this.btncancel.TabIndex = 5;
@@ -116,6 +116,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.lblUsername);
+            this.ForeColor = System.Drawing.Color.DarkCyan;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Text = "Login Form";
